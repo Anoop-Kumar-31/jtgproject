@@ -73,15 +73,19 @@
     .band{
         padding:0;
         margin:0;
-        width: 100vw;
     }
     .band div{
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 0px;
+        gap: 10px;
+        row-gap: 0;
+        margin: 0;
+        padding: 0;
     }
     .band div img{
-        height: 50%;
+        height: 33vw;
+        margin: 0;
+        padding: 0;
     }
     .band ~ div{
         display: flex;
