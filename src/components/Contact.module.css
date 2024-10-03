@@ -1,0 +1,160 @@
+.contactSection{
+    display: flex;
+    padding: 3% 9%;
+    justify-content: space-around;
+    gap: 25px;
+    background-color: #f0f0f6;
+}
+.contactSection section{
+    width: 65%;
+}
+.contactSection section h1{
+    color: #2b2b2b;
+    font-size: xx-large;
+    margin-bottom: 50px;
+}
+
+.contactSection form{
+    user-select: none;
+    padding:30px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.contactSection label{
+    color: #767676;
+    margin-bottom: 5px;
+    font-size: medium;
+}
+.contactSection input, textarea{
+    background-color:#f0f0f6;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.contactSection input:focus,textarea:focus{
+    outline: none;
+    box-shadow: 0 0 0px 2px #fee6a7;
+}
+.contactSection textarea{
+    background-color:#f0f0f6;
+    height: 120px;
+}
+.contactSection button{
+    background-color: #ffb400;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+}
+.contactSection>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+}
+.contactSection>div>div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactSection>aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25vw;
+}
+
+.contactSection aside h1{
+    color: #2b2b2b;
+    font-size: xx-large;
+    margin-bottom: 50px;
+}
+
+.contactSection aside>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contactSection aside>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    background-color: white;
+}
+.contactSection aside>div>div>div{
+    color: #767676;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between !important;
+}
+.contactSection aside>div>div>div:first-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    background-color: #ffb400;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.contactSection aside>div>div>div>img{
+    width: 60%;
+    height: 60%;
+}
+
+@media only screen and (max-width:1000px) {
+    .contactSection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100vw; */
+        margin: 0;
+        padding: 0;
+    }
+    .contactSection section{
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactSection section h1{
+        text-align: center;
+    }
+    .contactSection section button{
+        width: fit-contents;
+        align-self: center;
+    }
+    .contactSection>aside{
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactSection>aside>h1{
+        text-align: center;
+    }
+    .contactSection>aside>div>div{
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+    .contactSection>aside>div>div>div:first-of-type{
+        width: 70px !important;
+        height: 70px !important;
+        border-radius: 50% !important;
+    }
+
+}
