@@ -5,7 +5,20 @@ import style from './Recommendations.module.css';
 // import "../App.css";
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(2);
-  const cardWidth = 350;
+  const [cardWidth, setCardWidth] = useState(350);
+
+  useEffect(() => {
+    const updateCardWidth = () => {
+      if (window.innerWidth < 1000) {
+        setCardWidth(window.innerWidth * 0.665);
+      } else {
+        setCardWidth(350);
+      }
+    };
+    updateCardWidth();
+    window.addEventListener('resize', updateCardWidth);
+    return () => window.removeEventListener('resize', updateCardWidth);
+  }, []);
   const handlePointClick = (index) => {
     setActiveIndex(index);
   };
