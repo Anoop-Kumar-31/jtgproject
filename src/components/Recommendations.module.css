@@ -141,4 +141,21 @@
     .cards{
         grid-template-columns: none;
     }
+    .slides{
+        width: 90vw;
+    }
+    .recommCard{
+        width: 50vw;
+        height: fit-content;
+    }
+    .recommCard section:nth-child(3){
+        flex-direction: column;
+        gap: 10px;
+    }
+    .stars{
+        align-self: center;
+        justify-self: center;
+    }
+    
+
 }
