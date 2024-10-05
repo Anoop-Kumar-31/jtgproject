@@ -11,7 +11,15 @@ import logo from '../images/logo.png';
 const Navbar = () => {
   const sections = ['Home', 'Skills', 'Education', 'Projects', 'Recommendations', 'Contacts'];
   const [activeSection, setActiveSection] = useState('home');
-
+  const [theeshold, setTheeshold] = useState(0);
+  useEffect(() => {
+    const updateTheeshold = () => {
+      setTheeshold(window.innerHeight * 0.3);
+    };
+    updateTheeshold();
+    window.addEventListener('resize', updateTheeshold);
+    return () => window.removeEventListener('resize', updateTheeshold);
+  }, []);
   const handleScroll = () => {
     if (activeSection === 'skills') {
       return;
@@ -23,7 +31,7 @@ const Navbar = () => {
       if (sectionElement) {
         const sectionTop = sectionElement.offsetTop;
         const sectionHeight = sectionElement.offsetHeight;
-        if (window.scrollY >= sectionTop - 500 && window.scrollY < sectionTop + sectionHeight - 500) {
+        if (window.scrollY >= sectionTop - theeshold && window.scrollY < sectionTop + sectionHeight - theeshold) {
           foundSection = section.toLowerCase();
           break;
         }

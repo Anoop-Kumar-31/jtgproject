@@ -104,5 +104,9 @@
     }
     .cards{
         grid-template-columns: none;
+        gap: 10px;
+    }
+    .cards>card{
+        height: fit-content;
     }
 }
