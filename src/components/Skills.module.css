@@ -209,6 +209,11 @@
         padding-top: 40%;
         margin: 0;
     }
+    .sectioning>article>div>h2 {
+        line-height: 1;
+        width: 90vw;
+        margin: 20px 0 20px 0 !important;
+    }
     .sectioning>article>div:first-of-type {
         width: 80vw;
         padding: 0;
@@ -224,5 +229,9 @@
         width: 50vw;
         height: fit-content;
         padding: 20px 40px;
+    }
+    .skillContainer{
+        padding: 10px 20px;
+        width: 70vw;
     }
 }
