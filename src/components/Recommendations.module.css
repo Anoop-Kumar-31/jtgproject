@@ -156,6 +156,12 @@
         align-self: center;
         justify-self: center;
     }
-    
-
+    .recommCard section:nth-child(3) h5{
+        align-self: center;
+        text-align: center;
+    }
+    .recommCard section:nth-child(3) p{
+        align-self: center;
+        text-align: center;
+    }
 }
