@@ -28,6 +28,7 @@ const Skills = () => {
         setSkills([...skills, newSkill]);
         setVisible(false);
     };
+    
     return (
         [ visible && 
         <div className={style.popup}>
